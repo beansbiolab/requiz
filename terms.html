@@ -15,8 +15,16 @@
       font-size: 15px;
     }
     h1 { font-size: 24px; margin-bottom: 8px; }
-    h2 { font-size: 18px; margin-top: 40px; margin-bottom: 12px; border-bottom: 2px solid #eee; padding-bottom: 6px; }
-    .company { color: #555; font-size: 14px; margin-bottom: 32px; }
+    h2 {
+      font-size: 16px;
+      margin-top: 48px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 6px;
+    }
+    h3 { font-size: 15px; margin-top: 20px; margin-bottom: 8px; color: #444; }
+    .company { color: #555; font-size: 14px; margin-bottom: 12px; }
+    .date { color: #555; font-size: 14px; margin-top: 4px; }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -34,39 +42,79 @@
       border: 1px solid #ddd;
       vertical-align: top;
     }
-    ul { padding-left: 20px; }
+    ul { padding-left: 20px; margin: 8px 0; }
     li { margin-bottom: 4px; }
-    footer {
+    .notice-box {
+      background: #fff8e1;
+      border-left: 4px solid #ffc107;
+      padding: 12px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+    .info-box {
+      background: #e8f4fd;
+      border-left: 4px solid #2196f3;
+      padding: 12px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+    .footer {
       margin-top: 60px;
       padding-top: 20px;
       border-top: 1px solid #eee;
-      font-size: 13px;
-      color: #888;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
 <body>
+
   <h1>ReQuiz 이용약관</h1>
-  <div class="company">주식회사 빈즈바이오랩 | beansbiolab@gmail.com</div>
+  <p class="company">주식회사 빈즈바이오랩 | beansbiolab@gmail.com</p>
+  <p class="date">시행일: 2026년 6월 1일</p>
 
   <h2>제1조 (목적)</h2>
   <p>본 약관은 주식회사 빈즈바이오랩(이하 "회사")이 제공하는 ReQuiz 애플리케이션(이하 "서비스")의 이용 조건 및 절차, 회사와 이용자 간의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.</p>
 
   <h2>제2조 (용어의 정의)</h2>
   <table>
-    <tr><th>용어</th><th>정의</th></tr>
-    <tr><td>서비스</td><td>회사가 제공하는 ReQuiz 앱 및 관련 기능 일체</td></tr>
-    <tr><td>이용자</td><td>본 약관에 동의하고 서비스를 이용하는 자</td></tr>
-    <tr><td>계정</td><td>소셜 로그인을 통해 생성된 이용자 식별 정보</td></tr>
-    <tr><td>콘텐츠</td><td>이용자가 서비스 내에서 직접 생성한 과목, 문제, 퀴즈 데이터 등</td></tr>
+    <tr>
+      <th>용어</th>
+      <th>정의</th>
+    </tr>
+    <tr>
+      <td>서비스</td>
+      <td>회사가 제공하는 ReQuiz 앱 및 관련 기능 일체</td>
+    </tr>
+    <tr>
+      <td>이용자</td>
+      <td>본 약관에 동의하고 서비스를 이용하는 자</td>
+    </tr>
+    <tr>
+      <td>계정</td>
+      <td>소셜 로그인을 통해 생성된 이용자 식별 정보</td>
+    </tr>
+    <tr>
+      <td>콘텐츠</td>
+      <td>이용자가 서비스 내에서 직접 생성한 과목, 문제, 퀴즈 데이터 등</td>
+    </tr>
+    <tr>
+      <td>유료 서비스</td>
+      <td>인앱결제를 통해 제공되는 프리미엄 기능 또는 구독 서비스</td>
+    </tr>
   </table>
 
   <h2>제3조 (약관의 효력 및 변경)</h2>
   <p>본 약관은 서비스 화면에 게시하거나 앱 내 공지를 통해 이용자에게 공지함으로써 효력이 발생합니다. 회사는 관련 법령을 위반하지 않는 범위에서 약관을 변경할 수 있으며, 변경 시 시행일 7일 전에 앱 내 공지 또는 이메일을 통해 안내합니다.</p>
 
   <h2>제4조 (서비스 이용 조건)</h2>
-  <p>서비스는 만 14세 이상만 이용하실 수 있습니다. 소셜 로그인(카카오, 네이버, 구글) 후 이용 가능합니다.</p>
-  <p>이용자는 본 약관에 동의함으로써 서비스 이용 자격을 취득합니다. 회사는 다음의 경우 이용을 제한하거나 계정을 해지할 수 있습니다.</p>
+  <div class="notice-box">
+    ⚠️ 서비스는 만 14세 이상만 이용하실 수 있습니다. 만 14세 미만은 법정대리인의 동의 없이 서비스를 이용하실 수 없습니다.
+  </div>
+  <p>소셜 로그인(카카오, 네이버, 구글) 후 이용 가능합니다. 이용자는 본 약관에 동의함으로써 서비스 이용 자격을 취득합니다.</p>
+  <p>회사는 다음의 경우 이용을 제한하거나 계정을 해지할 수 있습니다.</p>
   <ul>
     <li>타인의 정보를 도용하거나 허위 정보를 제공한 경우</li>
     <li>서비스의 정상적인 운영을 방해한 경우</li>
@@ -78,12 +126,28 @@
   <ul>
     <li>과목 및 문제 관리 기능</li>
     <li>퀴즈 및 플래시카드 학습 기능</li>
+    <li>문제 사진 촬영 및 이미지 업로드 기능</li>
     <li>학습 통계 제공 기능</li>
     <li>AI 기반 문제 자동 생성 기능 (Google Gemini 연동)</li>
+    <li>복습 일정 푸시 알림 기능</li>
+    <li>인앱결제 기반 프리미엄 / 구독 기능</li>
   </ul>
   <p>회사는 서비스의 내용을 변경하거나 중단할 수 있으며, 이 경우 사전에 앱 내 공지를 통해 안내합니다. 단, 긴급한 경우 사후 공지할 수 있습니다.</p>
 
-  <h2>제6조 (서비스 이용 중단)</h2>
+  <h2>제6조 (유료 서비스 및 환불 정책)</h2>
+  <div class="info-box">
+    💳 유료 서비스는 Google Play 인앱결제를 통해 제공됩니다.
+  </div>
+  <ul>
+    <li>유료 서비스 이용 요금은 앱 내 결제 화면에 명시된 금액에 따릅니다.</li>
+    <li>구독형 서비스는 구독 기간 만료 전 자동으로 갱신되며, 갱신 24시간 전까지 취소하지 않으면 자동 결제됩니다.</li>
+    <li>구독 취소는 Google Play 스토어 → 구독 관리 메뉴에서 직접 진행하실 수 있습니다.</li>
+    <li>결제 후 <strong>48시간 이내</strong>에는 Google Play 환불 정책에 따라 환불을 요청하실 수 있습니다.</li>
+    <li>48시간 이후의 환불은 회사 고객센터(beansbiolab@gmail.com)로 문의하시기 바랍니다.</li>
+    <li>디지털 콘텐츠 특성상 이용 후에는 환불이 제한될 수 있습니다.</li>
+  </ul>
+
+  <h2>제7조 (서비스 이용 중단)</h2>
   <p>회사는 다음의 경우 서비스 제공을 일시 중단할 수 있습니다.</p>
   <ul>
     <li>서버 점검, 시스템 업그레이드 등 기술적 사유</li>
@@ -92,23 +156,26 @@
   </ul>
   <p>서비스 중단으로 인한 손해에 대해 회사는 고의 또는 중대한 과실이 없는 한 책임을 지지 않습니다.</p>
 
-  <h2>제7조 (이용자의 의무)</h2>
+  <h2>제8조 (이용자의 의무)</h2>
   <p>이용자는 다음 행위를 해서는 안 됩니다.</p>
   <ul>
     <li>타인의 계정을 도용하거나 부정하게 이용하는 행위</li>
     <li>서비스를 이용하여 불법적인 콘텐츠를 생성·유포하는 행위</li>
     <li>회사의 지식재산권을 침해하는 행위</li>
     <li>서비스의 정상적인 운영을 방해하는 행위 (해킹, 크롤링 등)</li>
+    <li>타인의 저작권이 있는 문제·자료를 무단으로 업로드하는 행위</li>
     <li>기타 관련 법령 및 본 약관을 위반하는 행위</li>
   </ul>
 
-  <h2>제8조 (콘텐츠의 권리 및 관리)</h2>
-  <p>이용자가 서비스 내에서 직접 생성한 콘텐츠의 저작권은 이용자에게 있습니다. 단, 이용자는 회사가 서비스 제공 목적으로 해당 콘텐츠를 저장·처리할 수 있도록 허용합니다. AI가 자동 생성한 문제의 저작권은 관련 법령 및 Google Gemini 이용약관에 따릅니다.</p>
+  <h2>제9조 (콘텐츠의 권리 및 관리)</h2>
+  <p>이용자가 서비스 내에서 직접 생성한 콘텐츠(문제, 이미지 등)의 저작권은 이용자에게 있습니다. 단, 이용자는 회사가 서비스 제공 목적으로 해당 콘텐츠를 저장·처리할 수 있도록 허용합니다.</p>
+  <p>AI가 자동 생성한 문제의 저작권은 관련 법령 및 Google Gemini 이용약관에 따릅니다.</p>
+  <p>이용자가 업로드한 이미지는 본인만 접근 가능하며, 회사는 서비스 제공 목적 외에 해당 이미지를 사용하지 않습니다.</p>
 
-  <h2>제9조 (개인정보 보호)</h2>
-  <p>회사는 이용자의 개인정보를 보호하기 위해 개인정보처리방침을 수립하여 운영합니다. 자세한 내용은 <a href="https://beansbiolab.github.io/requiz/privacy.html">개인정보처리방침</a>을 확인하시기 바랍니다.</p>
+  <h2>제10조 (개인정보 보호)</h2>
+  <p>회사는 이용자의 개인정보를 보호하기 위해 개인정보처리방침을 수립하여 운영합니다. 자세한 내용은 개인정보처리방침을 확인하시기 바랍니다.</p>
 
-  <h2>제10조 (책임의 제한)</h2>
+  <h2>제11조 (책임의 제한)</h2>
   <p>회사는 다음의 경우 손해배상 책임을 지지 않습니다.</p>
   <ul>
     <li>천재지변, 전쟁, 해킹 등 불가항력적 사유로 인한 서비스 장애</li>
@@ -118,16 +185,17 @@
     <li>무료 서비스 이용으로 인한 손해 (단, 회사의 고의·중과실 제외)</li>
   </ul>
 
-  <h2>제11조 (분쟁 해결 및 관할 법원)</h2>
+  <h2>제12조 (분쟁 해결 및 관할 법원)</h2>
   <p>서비스 이용과 관련하여 분쟁이 발생한 경우, 회사와 이용자는 상호 협의를 통해 해결을 우선으로 합니다. 협의가 이루어지지 않을 경우 대한민국 법령에 따르며, 관할 법원은 대구지방법원으로 합니다.</p>
 
-  <h2>제12조 (준거법)</h2>
+  <h2>제13조 (준거법)</h2>
   <p>본 약관은 대한민국 법령에 따라 해석되고 적용됩니다.</p>
 
-  <footer>
+  <div class="footer">
     <p><strong>시행일: 2026년 6월 1일</strong></p>
     <p>주식회사 빈즈바이오랩</p>
     <p>문의: beansbiolab@gmail.com</p>
-  </footer>
+  </div>
+
 </body>
 </html>
